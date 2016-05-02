@@ -21,7 +21,7 @@ public class SparkTest {
     private static final Pattern SPACE = Pattern.compile(" ");
 
     public static void main(String[] args) {
-        String master = "192.168.1.115";
+        String master = "spark://192.168.41.129:7077";
         String filename = "README.md";
         SparkConf sparkConf = new SparkConf().setAppName("JavaWordCount").setMaster(master);
         JavaSparkContext ctx = new JavaSparkContext(sparkConf);
